@@ -11,10 +11,11 @@ export class TestingComponent {
   serveStatus : string = "Offline";
   allownewserver = false;
   serverName = "";
+  serverCreated =false;
 
   constructor(){
     setTimeout(()=> {
-      this.allownewserver = true;
+      this.serverCreated = true;
     },2000);
   }
 
@@ -24,6 +25,7 @@ export class TestingComponent {
 
   oncreateserver(){
     this.serveStatus = "server was created!";
+    this.allownewserver = true;
   }
 
   onupdateserver(event:Event){
