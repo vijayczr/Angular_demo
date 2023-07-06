@@ -1,7 +1,13 @@
+<body>
+<div class="container mt-5">
+    <button class="btn btn-primary" [disabled]="!allownewserver"
+    (click)="oncreateserver()"    
+    >click here!</button>
+    <p>{{serverName}}</p>
+    <p>server with Id {{serverId}} is {{getserverstatus()}}</p>
+    <p>{{allownewserver}}</p>
 
-<button class="btn btn-primary">click here!</button>
-<p>server with Id {{serverId}} is {{getserverstatus()}}</p>
-                <div class="form-outline">
-                    <input type="email" id="typeEmail" class="form-control my-3" />
-                    <label class="form-label" for="typeEmail">Email input</label>
-                </div>
+    <label>server name</label>
+    <input type="text" name="form-control" (input)="onupdateserver($event)">
+</div>
+</body>
