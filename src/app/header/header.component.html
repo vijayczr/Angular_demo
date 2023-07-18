@@ -1,22 +1,53 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Recipe Book</a>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#"><h4>Recipe Book</h4></a>
 
-      <ul class="nav navbar-nav list-group-horizontal">
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Shopping List</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" role="button">Manage</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Save Data</a></li>
-                <li><a href="#">Fetch Data</a></li>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"  aria-label="Toggle navigation"
+      aria-controls="navbarSupportedContent" aria-expanded="false" data-mdb-target="#navbarSupportedContent">
+          <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Link -->
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Recipes</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Shopping List</a>
+              </li>
+          </ul>
+           <!-- Dropdown -->
+
+           <div class="nav-item dropdown mx-5">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+            data-mdb-toggle="dropdown">
+                Manage
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                    <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider" />
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </li>
             </ul>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
+          </div>
+      </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
